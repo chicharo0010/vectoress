@@ -12,12 +12,12 @@
             background-color: #f0f2f5;
         }
         #controls { 
-            width: 350px; 
+            width: 380px; 
             padding: 20px; 
             background-color: white;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
             overflow-y: auto;
-            flex-shrink: 0; /* Evita que el panel se encoja */
+            flex-shrink: 0;
         }
         #canvas-container { 
             flex-grow: 1;
@@ -111,14 +111,24 @@
             </div>
         </fieldset>
 
+        <fieldset>
+            <legend>Vector C</legend>
+            <div class="vector-input">
+                <label>x:</label><input type="text" class="vector-component" id="cx" value="3">
+                <label>y:</label><input type="text" class="vector-component" id="cy" value="1">
+                <label>z:</label><input type="text" class="vector-component" id="cz" value="-1">
+            </div>
+        </fieldset>
+
         <button id="calculateBtn">Calcular y Graficar</button>
         
         <h3>Resultados</h3>
         <div id="results">
-            <p>A + B = <span id="sumResult">(...)</span></p>
-            <p>A - B = <span id="subResult">(...)</span></p>
-            <p>A • B = <span id="dotResult">...</span></p>
-            <p>A x B = <span id="crossResult">(...)</span></p>
+            <p>A+B+C = <span id="sumResult">(...)</span></p>
+            <p>A • B = <span id="dotABResult">...</span></p>
+            <p>A x B = <span id="crossABResult">(...)</span></p>
+            <p>A • (B x C) = <span id="scalarTripleResult">...</span></p>
+            <p>A x (B x C) = <span id="vectorTripleResult">(...)</span></p>
         </div>
     </div>
 
