@@ -39,9 +39,12 @@ Calcula y visualiza las siguientes operaciones con vectores:
 * Hernández Hernández Cesar Eduardo
 
 ---
-* ![image_alt](https://github.com/chicharo0010/vectoress/blob/83f9b7db95c864bfa949f28e4ae827061292a52a/1.png) *Calculo de 2 vectores*
-* ![image_alt](https://github.com/chicharo0010/vectoress/blob/83f9b7db95c864bfa949f28e4ae827061292a52a/2.png) *Calculo de 3 vectores*
-* ![image_alt](3.png) *Calculo de 3 vectores*
+* ![image_alt](https://github.com/chicharo0010/vectoress/blob/83f9b7db95c864bfa949f28e4ae827061292a52a/1.png)
+* *Calculo de 2 vectores*
+* ![image_alt](https://github.com/chicharo0010/vectoress/blob/83f9b7db95c864bfa949f28e4ae827061292a52a/2.png)
+* *Calculo de 3 vectores*
+* ![image_alt](3.png)
+* *Calculo de 3 vectores*
 
 ---
 
@@ -51,6 +54,7 @@ Este proyecto se distribuye bajo la **Licencia MIT**.
 
 
 ```
+
 
 
 
