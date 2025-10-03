@@ -26,10 +26,10 @@ Calcula y visualiza las siguientes operaciones con vectores:
 
 ## Uso
 
-*No se requiere instalación. Simplemente abre el link de la aplicación en cualquier navegador web moderno.
-*[Calculadora de Vectores 3D] *(https://chicharo0010.github.io/vectoress/)*
-*Introduce los datos de 3 vectores
-*Da click en calcular y graficar
+* No se requiere instalación. Simplemente abre el link de la aplicación en cualquier navegador web moderno.
+* [Calculadora de Vectores 3D] *(https://chicharo0010.github.io/vectoress/)*
+* Introduce los datos de 3 vectores
+* Da click en calcular y graficar
 
 ---
 
