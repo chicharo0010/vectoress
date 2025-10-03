@@ -40,8 +40,8 @@ Calcula y visualiza las siguientes operaciones con vectores:
 
 ---
 
-! (1.png)
-! (2.png)
+* !(1.png)
+* !(2.png)
 
 ---
 
@@ -51,3 +51,4 @@ Este proyecto se distribuye bajo la **Licencia MIT**.
 
 
 ```
+
