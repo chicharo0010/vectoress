@@ -40,6 +40,10 @@ Calcula y visualiza las siguientes operaciones con vectores:
 
 ---
 
+!(1.png)
+!(2.png)
+
+---
 
 ## Licencia
 
