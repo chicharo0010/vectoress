@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Vectores 3D</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex; 
+            margin: 0; 
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        #controls { 
+            width: 380px; 
+            padding: 20px; 
+            background-color: white;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+        #canvas-container { 
+            flex-grow: 1;
+            position: relative;
+        }
+        canvas { 
+            display: block; 
+        }
+        h2, h3 { 
+            color: #333; 
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .vector-input {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .vector-input label {
+            font-weight: bold;
+        }
+        .vector-input input {
+            width: 60px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #results {
+            margin-top: 20px;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        #results p {
+            margin: 8px 0;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+        }
+        #results span {
+            font-weight: bold;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
 
+    <div id="controls">
+        <h2>Calculadora de Vectores 3D</h2>
+        
+        <fieldset>
+            <legend>Vector A</legend>
+            <div class="vector-input">
+                <label>x:</label><input type="text" class="vector-component" id="ax" value="2">
+                <label>y:</label><input type="text" class="vector-component" id="ay" value="3">
+                <label>z:</label><input type="text" class="vector-component" id="az" value="1">
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Vector B</legend>
+            <div class="vector-input">
+                <label>x:</label><input type="text" class="vector-component" id="bx" value="1">
+                <label>y:</label><input type="text" class="vector-component" id="by" value="-2">
+                <label>z:</label><input type="text" class="vector-component" id="bz" value="2">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vector C</legend>
+            <div class="vector-input">
+                <label>x:</label><input type="text" class="vector-component" id="cx" value="3">
+                <label>y:</label><input type="text" class="vector-component" id="cy" value="1">
+                <label>z:</label><input type="text" class="vector-component" id="cz" value="-1">
+            </div>
+        </fieldset>
+
+        <button id="calculateBtn">Calcular y Graficar</button>
+        
+        <h3>Resultados</h3>
+        <div id="results">
+            <p>A+B+C = <span id="sumResult">(...)</span></p>
+            <p>A • B = <span id="dotABResult">...</span></p>
+            <p>A x B = <span id="crossABResult">(...)</span></p>
+            <p>A • (B x C) = <span id="scalarTripleResult">...</span></p>
+            <p>A x (B x C) = <span id="vectorTripleResult">(...)</span></p>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/",
+            "d3": "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+        }
+    }
+    </script>
+    
+    <script type="module" src="./funciones.js"></script>
+
+</body>
+</html>
