@@ -8,11 +8,12 @@
 
 Calcula y visualiza las siguientes operaciones con vectores:
 
-* Suma de vectores (A + B + C)
+* Suma de vectores (A+B)
+* Resta de vectores (A-B)
 * Producto Punto (A ⋅ B)
 * Producto Cruz (A x B)
-* Producto Mixto (A ⋅ (B x C))
-* Triple Producto Vectorial (A x (B x C))
+* Producto Triple Escalar (A ⋅ (B x C))
+* Producto Triple Vectorial (A x (B x C))
 
 ---
 
@@ -28,7 +29,9 @@ Calcula y visualiza las siguientes operaciones con vectores:
 
 * No se requiere instalación. Simplemente abre el link de la aplicación en cualquier navegador web moderno.
 * [Calculadora de Vectores 3D] *(https://chicharo0010.github.io/vectoress/)*
-* Introduce los datos de 3 vectores
+* Elige cuantos vectores utilizaras
+* Introduce los datos de los vectores
+* Selecciona la operacion a realizar
 * Da click en calcular y graficar
 
 ---
@@ -51,6 +54,7 @@ Este proyecto se distribuye bajo la **Licencia MIT**.
 
 
 ```
+
 
 
 
